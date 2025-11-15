@@ -486,10 +486,6 @@ public class CommandClientImpl implements CommandClient, EventListener
 
     private void onMessageReceived(MessageReceivedEvent event)
     {
-        // Return if it's a bot
-        if(event.getAuthor().isBot())
-            return;
-
         String[] parts = null;
         String rawContent = event.getMessage().getContentRaw();
 
